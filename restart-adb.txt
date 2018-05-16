@@ -1,0 +1,23 @@
+@echo off
+goto restart
+
+:restart
+chdir /d D:\platform-tools
+@echo.
+adb kill-server
+adb start-server
+goto ask
+
+:ask
+@echo.
+@echo Do you want to try again?[Y/N]
+set INPUT=
+set /P INPUT=%=%
+If /I "%INPUT%"=="y" goto yes 
+If /I "%INPUT%"=="n" goto no
+
+:yes
+goto restart
+
+:no
+quit
