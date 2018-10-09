@@ -1,0 +1,2 @@
+START C:\"Program Files (x86)"\Google\Chrome\Application\chrome.exe
+START C:\"Program Files"\Android\"Android Studio"\bin\studio64.exe
