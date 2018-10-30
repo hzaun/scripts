@@ -2,7 +2,6 @@
 goto restart
 
 :restart
-chdir /d D:\platform-tools
 @echo.
 adb kill-server
 adb start-server
